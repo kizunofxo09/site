@@ -1,6 +1,6 @@
     let img = document.createElement("img");
     img.src = "Novo_Projeto_6_1.png";
-    img.alt = "thumbnail";
+    img.alt = "placeholder";
     img.style.width = "1250px";
     document.body.appendChild(img);
 
