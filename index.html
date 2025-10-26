@@ -8,15 +8,20 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background: #111;
-    }
-
-    img {
-      width: 1250px; /* tamanho opcional */
+      background: #222;
     }
   </style>
 </head>
 <body>
-  <img src="Novo_Projeto_6_1.png" alt="placeholder">
+  <script>
+    let img = document.createElement("img");
+    img.src = "Novo_Projeto_6_1.png"; // <-- muda pro nome certo da tua imagem
+    img.style.width = "1250px";
+    document.body.appendChild(img);
+
+    // Mostra erro no console se não carregar
+    img.onerror = () => alert("Imagem não encontrada!");
+  </script>
 </body>
 </html>
+
